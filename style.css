@@ -60,3 +60,8 @@
         height: 50vh;
     }
 }
+
+.fecharPopUp{
+  cursor: pointer;
+  float: right;
+}

@@ -7,6 +7,7 @@ function formulario() {
     }
 }
 
+const fecharPU = document.querySelector('.fecharPopUp');
 const popup = document.getElementById('popup');
 const closeBtn = document.querySelector('.close');
 const checkbox = document.getElementById('checkbox');
@@ -19,6 +20,12 @@ function closePopup() {
 if (!localStorage.getItem('popupShown')) {
     popup.classList.add('show');
 }
+
+fecharPU.addEventListener('click', function (e) {
+    if (e.target === this) {
+        closePopup();
+    }
+});
 
 popup.addEventListener('click', function (e) {
     if (e.target === this) {
